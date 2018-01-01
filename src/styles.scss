@@ -1,0 +1,28 @@
+//全局样式：引入font-awesome字体图标样式
+@import '~font-awesome/css/font-awesome.min.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+*{
+  font-family: "Microsoft YaHei";
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body{
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  line-height: 1.5;
+}
+html{
+  min-height: 100%;
+  position: relative;
+}
+form {
+  width: 83%;
+  margin: 0 auto;
+}
+input, select{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+

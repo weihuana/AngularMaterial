@@ -1,0 +1,47 @@
+.login-input{
+  width: 278px;
+  padding: 7px 10px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  outline: 0;
+}
+.u-form-top-tip {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 15px;
+}
+.submit_btn {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  font: 16px "微软雅黑";
+  color: #fffeff;
+  border: 0 none;
+  cursor: pointer;
+  background: #f10180;
+  outline: 0;
+}
+.u-form-item{
+  position: relative;
+  margin-bottom: 15px;
+}
+.login-foot{
+  width: 278px;
+  font-size: 12px;
+  color: #666;
+  margin-left: 16px;
+  .reg{
+    float: right;
+    color: #f10180;
+    display: inline-block;
+    cursor: pointer;
+    :hover{
+      text-decoration: underline;
+    }
+  }
+  .login-checkbox-label{
+    display: inline-block;
+  }
+}

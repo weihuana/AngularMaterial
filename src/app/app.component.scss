@@ -1,0 +1,33 @@
+.header-nav{
+  box-shadow: rgb(238, 238, 238) 0 1px 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  .header-wrap{
+    .header-nav-list{
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      .list-item{
+          justify-content: flex-end;
+      }
+    }
+  }
+  a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: #333;
+    :hover{
+      text-decoration: underline;
+      color: #f10180;
+    }
+  }
+  .logo{
+    margin-right: 20px;
+    a{
+      color: #f10180;
+      font-size: 30px;
+    }
+  }
+}

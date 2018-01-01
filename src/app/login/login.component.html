@@ -1,0 +1,32 @@
+<div class="container">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <mat-list>
+      <mat-list-item>
+        <div class="u-form-top-tip">
+          如有账号，请登录
+        </div>
+      </mat-list-item>
+      <mat-list-item class="u-form-item">
+        <div class="form-group">
+          <input type="text" placeholder="请输入账号" class="form-control login-input" id="username" formControlName="username" />
+        </div>
+      </mat-list-item>
+      <mat-list-item class="u-form-item">
+        <div class="form-group">
+          <input type="password" placeholder="请输入密码" class="form-control login-input" id="psword" formControlName="password" />
+        </div>
+      </mat-list-item>
+      <mat-list-item class="u-form-item">
+        <div class="form-group reg-check">
+          <input type="submit" value="登录" class="submit_btn btn btn-warning" [disabled]="!myForm.valid" />
+        </div>
+      </mat-list-item>
+    </mat-list>
+    <div class="login-foot">
+      <div class="login-checkbox-label">记住密码</div>
+      <div class="reg" routerLink="/register">免费注册</div>
+    </div>
+  </form>
+</div>
+<router-outlet></router-outlet>
+

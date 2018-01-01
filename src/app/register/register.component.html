@@ -1,0 +1,78 @@
+<div class="container">
+  <form action="" method="post" [formGroup]='formModel'><!--通过指令绑定ts文件中命名的变量名 &#45;&#45;-->
+    <mat-list>
+      <mat-list-item>
+        <div class="regHeaderTip">
+          <span>欢迎注册</span>
+          <span>已注册可<a class="hvLine" routerLink="/login">直接登录</a></span>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div class="form-group input">
+          <label class="required_input" for="username">公司名称: </label>
+          <input type="text" placeholder="请输入公司名称" class="form-control txt-m txt_grey" id="company" formControlName="companyname" />
+        </div>
+        <div class="input-tip err">
+          <span>公司名称不能为空!</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div class="form-group input">
+          <label class="required_input" for="mobile">手机号码:</label>
+          <input type="text" placeholder="请输入手机号码" class="form-control txt-m" id="mobile" formControlName="mobile"/>
+        </div>
+        <div class="input-tip err">
+          <span>手机号码不能为空!</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div class="form-group input">
+          <label class="required_input">设置密码:</label>
+          <input type="password" class="form-control txt-m" placeholder="请输入密码" formControlName="password" />
+        </div>
+        <div class="input-tip err">
+          <span>密码不能为空!</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div class="form-group input">
+          <label class="required_input">邮箱:</label>
+          <input type="email" class="form-control txt-m" placeholder="请输入邮箱" formControlName="email" />
+        </div>
+        <div class="input-tip err">
+          <span>邮箱不能为空!</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div class="form-group input">
+          <label class="required_input">选择行业:</label>
+          <select class="form-control txt-m" ng-model="searchType"  formControlName="email">
+            <option value="1" ng-selected="searchType=='1'">互联网IT</option>
+            <option value="2">金融</option>
+            <option value="3">快递</option>
+          </select>
+        </div>
+        <div class="input-tip err">
+          <span>邮箱不能为空!</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div class="form-group input">
+          <label for="username">邀请码: </label>
+          <input type="text" placeholder="请输入邀请码" class="form-control txt-m" id="username" formControlName="invitecode" />
+        </div>
+        <div class="input-tip err">
+          <span>公司名称不能为空!</span>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div class="form-group reg-check">
+          <input type="submit" value="注册" class="submit_btn btn btn-warning" [disabled]="!myForm.valid" />
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </form>
+  <router-outlet></router-outlet>
+</div>
+
+
